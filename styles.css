@@ -1345,11 +1345,17 @@ main:focus {
   color: var(--accent);
 }
 
-.resume-block > p {
+.resume-block > p,
+.resume-summary {
   margin: 0;
-  max-width: 62ch;
+  width: 100%;
+  max-width: none;
   line-height: 1.55;
   color: var(--text);
+}
+
+.resume-summary {
+  text-wrap: pretty;
 }
 
 .resume-skills {
